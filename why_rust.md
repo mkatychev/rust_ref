@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: default
+style: @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
 ---
 
 # Why Rust
@@ -9,34 +9,69 @@ theme: default
 
 ---
 
-## Could Rust be a good fit for you?
 
-- what is interesting about Rust?
-- why do you like Rust?
-- what does the borrow checker do in Rust?
-- what is the best way to handle nullable types in Rust (hint: talk about the `Option` type)
-![bg width:200px left](https://rustacean.net/more-crabby-things/rustdocs.png)
+# Rust, a language empowering everyone to build reliable and efficient software.
+
+<div class="grid grid-cols-3 gap-4">
+<div>
+
+## Performance
+Rust is blazingly fast and memory-efficient:
+with no runtime or garbage
+collector, it can power performance-critical services, run on embedded
+devices, and easily integrate with other languages.
+
+</div>
+<div>
+
+## Reliability
+Rust’s rich type system and ownership model guarantee memory-safety and
+thread-safety —
+enabling you to eliminate many classes of bugs at
+compile-time.
+
+</div>
+<div>
+
+## Productivity
+Rust has great documentation, a friendly compiler with useful error messages,
+and top-notch tooling — an integrated package manager and build tool, smart
+multi-editor support with auto-completion and type inspections, an
+auto-formatter, and more.
+
+</div>
+</div>
 
 ---
 
-- Compiled (Rust) vs. Interpreted languages (Python)
-- Strong Typing (Rust) vs. Weak Typing (Python)
-- [The borrow checker (how does Rust enforce AXM)](https://blog.logrocket.com/introducing-the-rust-borrow-checker/)
-- [`null`: The Billion Dollar Mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/)
-- Object inheritance (Python) vs. Compositional inheritance (Rust)
+## Rust is already widely adopted!
 
-![bg width:300px right](https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/7b19cb89117181.5df79fa1c6954.png)
+[Rust foundation](https://foundation.rust-lang.org/) platinum members:
+
+![bg width:400px right](./images/platinum.png)
+
+---
+
+[Rust foundation](https://foundation.rust-lang.org/) silver members:
+
+![bg width:400px right](./images/silver.png)
 
 ---
 
 ## Strengths
 
-
-- Compiled code [about same performance](https://benchmarksgame-team.pages.debian.net/benchmarksgame/box-plot-summary-charts.html) as C / C++, and excellent [memory and energy efficiency](https://dl.acm.org/doi/10.1145/3136014.3136031).
-- Can [avoid 70% of all safety issues](https://www.chromium.org/Home/chromium-security/memory-safety) present in C / C++, and most memory issues.
-- Strong type system prevents [data races](https://doc.rust-lang.org/nomicon/races.html), brings ['fearless concurrency'](https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html) (amongst others).
-- Seamless C interop, and [dozens of supported platforms](https://doc.rust-lang.org/rustc/platform-support.html) (based on LLVM).
-- ["Most loved language"](https://survey.stackoverflow.co/2022/#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages
+- Compiled code [about same performance](
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/box-plot-summary-charts.html) as C / C++, and excellent [memory and energy efficiency](
+https://dl.acm.org/doi/10.1145/3136014.3136031).
+- Can [avoid 70% of all safety issues](
+https://www.chromium.org/Home/chromium-security/memory-safety) present in C / C++, and most memory issues.
+- Strong type system prevents [data races](
+https://doc.rust-lang.org/nomicon/races.html), brings ['fearless concurrency'](
+https://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html) (amongst others).
+- Seamless C interop, and [dozens of supported platforms](
+https://doc.rust-lang.org/rustc/platform-support.html) (based on LLVM).
+- ["Most loved language"](
+https://survey.stackoverflow.co/2022/#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages
   ) for ~~4~~ ~~5~~ ~~6~~ 7 years in a row. 🤷‍♀️
 - Modern tooling: `cargo` (builds _just work_), `clippy` (550+ code quality lints), `rustup` (easy toolchain mgmt).
 
@@ -95,10 +130,10 @@ option type.
 
 ---
 
-Type [`Option`](https://doc.rust-lang.org/std/option/enum.Option.html)
-represents an optional value: every `Option` is either `Option::Some` and
-contains a value, or `Option::None,` and does not. `Option` types are very common in Rust
-code, as they have a number of uses:
+## [`Option`](https://doc.rust-lang.org/std/option/enum.Option.html) type
+represents an optional value: every `Option` is either `Option::Some`(contains a value,
+or `Option::None`(essentially `null`). `Option`s are used
+frequently in Rust with a number of uses:
 - Initial values
 - Return values for functions that are not defined over their entire input range (partial functions)
 - Return value for otherwise reporting simple errors, where None is returned on error
@@ -119,3 +154,24 @@ pub enum Option<T> { // < Body of enum option,
     Some(T),         // | it will be either `None`
 }                    // < or `Some(T)`
 ```
+--- 
+## Could Rust be a good fit for you?
+
+- what is interesting about Rust?
+- why do you like Rust?
+- what does the borrow checker do in Rust?
+- what is the best way to handle nullable types in Rust (hint: talk about the `Option` type)
+![bg width:200px left](https://rustacean.net/more-crabby-things/rustdocs.png)
+
+---
+
+## General Concepts
+
+- Compiled (Rust) vs. Interpreted languages (Python)
+- Strong Typing (Rust) vs. Weak Typing (Python)
+- [The borrow checker (how does Rust enforce AXM)](https://blog.logrocket.com/introducing-the-rust-borrow-checker/)
+- [`null`: The Billion Dollar Mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/)
+- Object inheritance (Python) vs. Compositional inheritance (Rust)
+
+![bg width:300px right](https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/7b19cb89117181.5df79fa1c6954.png)
+
