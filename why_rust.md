@@ -1,5 +1,6 @@
 ---
 marp: true
+theme: default
 style: @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
 ---
 
@@ -12,7 +13,7 @@ style: @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
 
 # Rust, a language empowering everyone to build reliable and efficient software.
 
-<div class="grid grid-cols-3 gap-4">
+<div class="grid grid-cols-3 gap-4 text-base">
 <div>
 
 ## Performance
