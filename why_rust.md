@@ -4,9 +4,18 @@ theme: default
 style: @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
 ---
 
-# Why Rust
+# Rust talk 2025 December
 
-![bg width:200px right](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/1024px-Rust_programming_language_black_logo.svg.png)
+![bg width:600px right](./images/ferris.png)
+
+---
+
+# Slides
+
+![bg width:200px left](./images/slides.gif)
+
+[mkatychev.github.io/2025-12-rust-talk](https://mkatychev.github.io/2025-12-rust-talk/)
+
 
 ---
 
@@ -155,7 +164,7 @@ pub enum Option<T> { // < Body of enum option,
     Some(T),         // | it will be either `None`
 }                    // < or `Some(T)`
 ```
---- 
+---
 ## Could Rust be a good fit for you?
 
 - what is interesting about Rust?
