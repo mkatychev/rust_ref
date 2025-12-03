@@ -12,12 +12,14 @@ style: @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
 
 # Slides
 
-![bg width:200px left](./images/slides.gif)
-
-[mkatychev.github.io/2025-12-rust-talk](https://mkatychev.github.io/2025-12-rust-talk/)
-
+Presenter    | Talk (hyperlink)
+---|---
+David Felix  | [A Brief Overview of Chip Production](https://docs.google.com/presentation/d/1fI2tPu4xHvg_3a_G10I2ftkgEVCCvKZaksVLB8h16u0/edit?usp=sharing)
+Steve McKay  | [eBPF with Rust](https://github.com/smmckay/talks/blob/main/ebpf_with_rust/slides.md)
+Kevin Ness   | [Exploring Javascript with Rust](https://github.com/nekevss/talks)
 
 ---
+
 ## Sponsor for 🍕
 
 
@@ -27,7 +29,6 @@ style: @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
 ![bg width:400px left](https://mimic.com/static/10d579cb02649383b60665ac80cbcd0a/8ab23/040d8354d4ea2627c7ebb99a896a7e490a14733f-1200x675.webp)
 
 ---
-
 
 # Rust, a language empowering everyone to build reliable and efficient software.
 
